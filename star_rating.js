@@ -30,7 +30,16 @@ function starRating(str) {
 
 // 星で出力する元のデータ
 var test = "2.36";
+var test2 = "0.38";
+var test3 = "4.95";
+var test4 = "3.76";
 // 出力内容
 console.log("評価を表示");
 console.log(test);
-console.log(starRating(test));
+starRating(test);
+console.log(test2);
+starRating(test2);
+console.log(test3);
+starRating(test3);
+console.log(test4);
+starRating(test4);
