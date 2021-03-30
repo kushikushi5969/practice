@@ -24,4 +24,5 @@ def starRating(str)
   puts "評価は" + result + "です"
 end
 puts "評価を入力してください。例）2.38"
+puts "★ = full , ☆ = half , * = empty"
 puts starRating(STDIN.gets)
