@@ -42,18 +42,18 @@ var test6 = 45622943;
 var test7 = 5462;
 
 // 出力内容
-console.log("文字列反転");
+console.log("数列を分解して加算");
 console.log(test);
 recursiveDigitsAdded(test);
-// console.log(test2);
-// recursiveDigitsAdded(test2);
-// console.log(test3);
-// recursiveDigitsAdded(test3);
+console.log(test2);
+recursiveDigitsAdded(test2);
+console.log(test3);
+recursiveDigitsAdded(test3);
 console.log(test4);
 recursiveDigitsAdded(test4);
 console.log(test5);
 recursiveDigitsAdded(test5);
-// console.log(test6);
-// recursiveDigitsAdded(test6);
-// console.log(test7);
-// recursiveDigitsAdded(test7);
+console.log(test6);
+recursiveDigitsAdded(test6);
+console.log(test7);
+recursiveDigitsAdded(test7);
