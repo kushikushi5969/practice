@@ -1,61 +1,35 @@
-function splitAndAdd(str) {
-  let string = String(str);
-  let number = string.split('').map(Number);
-  let result = 0;
+function recursiveDigitsAdded(str) {
   let total = 0;
-
-  let add = number.reduce(function(sum, element){
-    return sum + element;
+  let value = str.toString().split("");
+  let dig_list = value.map(Number);
+  let sum = dig_list.reduce(function(a,b) {
+    return a + b;
   }, 0);
-  result = add;
-  total = add;
+  let result = sum;
 
-  console.log(String(total) + " =total2");
-  console.log(String(result) + " =result2");
-  for (var i = 1; i < String(total).length; i++) {
-    // if (String(total).length < 2) {
-    //   console.log(result + "if文");
-    // } else {
-    //   let string = String(result)
-    //   let number = string.split('').map(Number);
-    //   let total = number.reduce(function(sum, element){
-    //     return sum + element;
-    //   }, result);
-    //   result = total;
-    // }
-    let string = String(total);
-    let number = string.split('').map(Number);
-    let add = number.reduce(function(sum, element){
-      return sum + element;
-    }, result);
-    total = add;
-    result = add;
-    console.log(String(total) + " =total2");
-    console.log(String(result) + " =result2");
+  function splitAndAdd(result, total) {
+    let value = result.toString().split("");
+    let dig_list = value.map(Number);
+    let sum = dig_list.reduce(function(c, d) {
+      return c + d;
+    });
+    if (sum < 10) {
+      total += sum;
+      console.log(total.toString());
+    } else {
+      total += sum;
+      return splitAndAdd(sum, total);
+    }
   }
-  console.log(String(result));
 
-  // for (var i = 1; i < String(str).length; i++) {
-  //   let string = String(str);
-  //   let number = string.split('').map(Number);
-  //   let total = number.reduce(function(sum, element){
-  //     return sum + element;
-  //   }, result);
-  //   result += total;
-  // }
-  // console.log(result);
+  if (result < 10) {
+    result + total;
+    console.log(result.toString());
+  } else {
+    total += result;
+    return splitAndAdd(result, total);
+  }
 
-  // if (String(total).length < 2) {
-  //   console.log(result);
-  // } else {
-  //   let string = String(result)
-  //   let number = string.split('').map(Number);
-  //   let total = number.reduce(function(sum, element){
-  //     return sum + element;
-  //   }, result);
-  //   result = total;
-  // }
-  // console.log(String(result));
 }
 
 // 元のデータ
@@ -70,16 +44,16 @@ var test7 = 5462;
 // 出力内容
 console.log("文字列反転");
 console.log(test);
-splitAndAdd(test);
-console.log(test2);
-splitAndAdd(test2);
-console.log(test3);
-splitAndAdd(test3);
+recursiveDigitsAdded(test);
+// console.log(test2);
+// recursiveDigitsAdded(test2);
+// console.log(test3);
+// recursiveDigitsAdded(test3);
 console.log(test4);
-splitAndAdd(test4);
+recursiveDigitsAdded(test4);
 console.log(test5);
-splitAndAdd(test5);
-console.log(test6);
-splitAndAdd(test6);
-console.log(test7);
-splitAndAdd(test7);
+recursiveDigitsAdded(test5);
+// console.log(test6);
+// recursiveDigitsAdded(test6);
+// console.log(test7);
+// recursiveDigitsAdded(test7);
