@@ -11,3 +11,4 @@ console.log("水曜日だけど祝日なので" + schoolDays("Wednesday",true));
 console.log("木曜日なので" + schoolDays("Thursday",false));
 console.log("金曜日だけど祝日なので" + schoolDays("Fridat",true));
 console.log("土曜日なので" + schoolDays("Saturday", false));
+console.log("月曜日だけど祝日なので" + schoolDays("Monday", true));
