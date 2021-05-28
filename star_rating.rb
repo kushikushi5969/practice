@@ -3,7 +3,7 @@ def starRating(str)
   result = "";
   starCount = 0
 
-  while starCount < 5
+  while starCount < 10
     if rating >= 1
       result += "★ "
       rating -= 1
