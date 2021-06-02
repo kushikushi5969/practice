@@ -14,6 +14,7 @@ var test2 = "test";
 var test3 = "My name is kussy";
 var test4 = "How about you?";
 var test5 = "good!";
+var test6 = "goodboy!";
 // 出力内容
 console.log("末尾４文字のヒントを出力（６文字未満はヒント無し）");
 console.log(test);
@@ -26,3 +27,5 @@ console.log(test4);
 Hint(test4);
 console.log(test5);
 Hint(test5);
+console.log(test6);
+Hint(test6);
