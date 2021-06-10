@@ -20,5 +20,5 @@ console.log("11は" +primeNumber(11));
 console.log("12は" +primeNumber(12));
 console.log("13は" +primeNumber(13));
 console.log("14は" +primeNumber(14));
-console.log("15は" +primeNumber(15));
+
 
