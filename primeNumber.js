@@ -15,7 +15,7 @@ console.log("6は" +primeNumber(6));
 console.log("7は" +primeNumber(7));
 console.log("8は" +primeNumber(8));
 console.log("9は" +primeNumber(9));
-
+console.log("10は" +primeNumber(10));
 
 
 
